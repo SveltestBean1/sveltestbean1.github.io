@@ -1,6 +1,117 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Template</title>
+        <meta charset="utf-16">
+        <title>Content Page en-br</title>
+        <!-- Fonts... -->
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <!-- Why CSS!? -->
+        <style>
+            body {
+                background-color: #59D171;
+            }
+            p {
+                font-family: 'Montserrat';
+                font-size: 18px;
+                margin: 15px;
+            }
+            h1 {
+                font-family: 'Montserrat';
+                font-size: 22px;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                margin: 0px;
+                padding: 10px;
+                width: 100%;
+                position: center;
+                background-color: #259F42;
+                z-index: 100;
+                color: white;
+            }
+            .head{
+                position: fixed;
+                width: 45px;
+                top: 2.5px;
+                left: 250px;
+                z-index: 101;
+            }
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                color: white;
+            }
+            .a {
+                font-family: "Lato";
+                font-size: 20px;
+                position: fixed;
+                right: 15px;
+                border: 1px solid #59D171;
+                background-color: #000;
+                color: #FFF;
+                text-transform: uppercase;
+                text-decoration: none;
+                top: 350px;
+            }
+            .site {
+                border: 1px solid #59D171;
+                background-color: #EBAD27;
+                padding: inherit;
+                font-family: 'Lato';
+                margin: 100px;
+                color: white;
+            }
+            h2 {
+                font-size: 25px;
+                margin: 15px;
+            }
+            .date {
+                font-size: 15px;
+                text-transform: uppercase;
+                margin: 15px;
+                font-family: "Lato";
+            }
+            .title{
+                font-family: 'Montserrat';
+                font-size: 15px;
+                position: fixed;
+                top: 45px;
+                left: 0px;
+                margin: 0px;
+                padding: 10px;
+                width: 100%;
+                position: center;
+                background-color: #259F42;
+                z-index: 100;
+                color: white;
+                text-decoration: none;
+            }
+        </style>
     </head>
+    <body>
+        <h1>SveltestBean1</h1>
+        <p class="title">HOME <a href="https://www.khanacademy.org/profile/SveltestBean1/"> PROFILE</a> <a href="https://www.khanacademy.org/computer-programming/new-blog/4674150558793728"> BLOG</a> <a href="https://www.khanacademy.org/computer-programming/examples/5615675137884160"> EXAMPLES</a></p>
+        <div class="site">
+            <p>Hello! This is the homepage of SveltestBean1. I will be uploading things less often now, so keep an eye out!</p>
+        </div>
+        <a class="a" href="#top">TOP</a>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>//boi i hate functions
+            $(function(){
+                $('a').on("mouseover",function(){
+                    $(this).animate({
+                        fontSize: "+=5"
+                    }, 500)
+                })
+            })
+            $(function(){
+                $("a").on("mouseout", function(){
+                    $(this).animate({
+                        fontSize: "-=5"
+                    }, 500)
+                })
+            })
+        </script>
+    </body>
 </html>
