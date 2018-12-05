@@ -99,14 +99,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>//boi i hate functions
             $(function(){
-                $('a').on("mouseover",function(){
+                $('a .title').on("mouseover",function(){
                     $(this).animate({
                         fontSize: "+=5"
                     }, 500)
                 })
             })
             $(function(){
-                $("a").on("mouseout", function(){
+                $("a .title").on("mouseout", function(){
                     $(this).animate({
                         fontSize: "-=5"
                     }, 500)
