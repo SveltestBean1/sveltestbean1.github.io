@@ -27,9 +27,9 @@ h1 {
 
 .title div{
     font-size: 26px;
-    width: 25%;
     letter-spacing: 0px;
     transition: letter-spacing 1s;
+    display: inline;
 }
 
 .title div:hover{
@@ -46,9 +46,12 @@ h1 {
 .content div{
     border: 0px solid #000;
     border-radius: 10px;
-    background-color: #efefefcc;
+    background-color: #efefef;
     padding: 2px;
     padding-left: 10px;
+}
+
+.content div {
     margin-top: 10px;
 }
 
@@ -67,42 +70,7 @@ a:hover, a:active {
 }
 
 .iewarning {
-    display: none;
+    right: 10%;
+    display: inline;
     text-align: right;
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .content div{
-        background-color: #efefef;
-    }
-    .title div{
-        display: inline-block;
-    }
-    .iewarning {
-        display: inline-block;
-    }
-}
-
-@supports (-ms-accelerator:true) {
-    .content div{
-        background-color: #efefef;
-    }
-    .title div{
-        display: inline-block;
-    }
-    .iewarning {
-        display: inline-block;
-    }
-}
-
-@supports (-ms-ime-align:auto) {
-    .content div{
-        background-color: #efefef;
-    }
-    .title div{
-        display: inline-block;
-    }
-    .iewarning {
-        display: inline-block;
-    }
 }
